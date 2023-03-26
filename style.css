@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+
+
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/bg-pattern-bottom-desktop.svg), url(./images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right 180px bottom 180px, left 100px top 0px;
+}
+
+.wrap {
+    margin-left: 250px;
+    margin-right: 250px;
+    height: 100%;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.top-left {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.top-left h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.top-left p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: hsl(303, 10%, 53%);
+}
+
+.top-right {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 1.4rem;
+    margin-top: 2rem;
+}
+
+.top-right p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.reviews {
+    display: flex;
+    gap: 0.5rem;
+    background-color: hsl(300, 24%, 96%);
+    margin-right: 150px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.guru {
+    display: flex;
+    gap: 0.5rem;
+    background-color: hsl(300, 24%, 96%);
+    margin-right: 100px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+.best-tech {
+    display: flex;
+    gap: 0.5rem;
+    background-color: hsl(300, 24%, 96%);
+    margin-right: 50px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+
+
+.bot {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    gap: 2.5rem;
+}
+
+.bot p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: white;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.profile p{
+    line-height: normal;
+    color: white;
+}
+
+.profile span {
+    color: hsl(333, 80%, 67%);
+    font-weight: 500;
+}
+
+.profile img {
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    width: 1fr;
+    height: 50%;
+    background-color: hsl(300, 43%, 22%);
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    width: 1fr;
+    height: 50%;
+    background-color: hsl(300, 43%, 22%);
+    gap: 2rem;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.content3 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    width: 1fr;
+    height: 50%;
+    background-color: hsl(300, 43%, 22%);
+    gap: 2rem;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+@media all and (max-width: 1740px) {
+    body {
+        height: auto;
+        font-size: 1rem;
+        width: 100vw;
+        background-image: url(./images/bg-pattern-bottom-mobile.svg), url(./images/bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    .wrap {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .top-left {
+        text-align: center;
+        align-self: start;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .top-left h1 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    
+    .top-left p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+
+    .top-right div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .top-right {
+        width: 100%;
+        gap: 1.4rem;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    
+    .top-right p {
+        font-size: 1rem;
+        font-weight: 700;
+        color: hsl(300, 43%, 22%);
+    }
+
+    .star {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .reviews {
+        flex-direction: column;
+        gap: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .guru {
+        flex-direction: column;
+        gap: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+
+
+    .best-tech {
+        flex-direction: column;
+        gap: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .bot {
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .bot p {
+        font-size: 1rem;
+    }
+
+
+}
