@@ -169,7 +169,7 @@ body {
     margin-top: 40px;
 }
 
-@media all and (max-width: 1740px) {
+@media all and (max-width: 1300px) {
     body {
         height: auto;
         font-size: 1rem;
